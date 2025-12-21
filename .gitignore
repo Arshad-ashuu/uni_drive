@@ -1,10 +1,10 @@
 # --------------------
 # Python virtual envs
-# --------------------
-venv/
-backend/venv/
+
 .env
 .env.*
+venv/
+backend/venv/
 
 # --------------------
 # Python cache files
