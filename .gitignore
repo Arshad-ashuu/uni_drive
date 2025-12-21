@@ -1,0 +1,46 @@
+# --------------------
+# Python virtual envs
+# --------------------
+venv/
+backend/venv/
+.env
+.env.*
+
+# --------------------
+# Python cache files
+# --------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --------------------
+# Flask / app files
+# --------------------
+instance/
+*.log
+
+# --------------------
+# OS / Editor junk
+# --------------------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --------------------
+# Test / coverage
+# --------------------
+.pytest_cache/
+.coverage
+htmlcov/
+
+# --------------------
+# Build artifacts
+# --------------------
+dist/
+build/
+*.egg-info/
+
+# --------------------
+# SQLite (if used)
+# -------
