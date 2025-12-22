@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block title %}Files – Uni Drive{% endblock %}
+
+{% block body %}
+<header class="topbar">
+  <div class="logo">☁ Uni Drive</div>
+  <input type="text" placeholder="Search files..." />
+  <div class="user">
+    <img src="https://ui-avatars.com/api/?name=User" />
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <button class="primary">📤 Upload</button>
+
+    <ul>
+      <li class="active">📁 My Drive</li>
+      <li>⭐ Starred</li>
+      <li>🗑 Trash</li>
+    </ul>
+
+    <button class="secondary" onclick="window.location='/auth/google'">
+      ➕ Add Account
+    </button>
+  </aside>
+
+  <!-- Main -->
+  <main class="content">
+    <h2>My Drive</h2>
+
+    <!-- ACCOUNT TABS -->
+    <div id="tabs" class="tabs"></div>
+
+    <!-- FILES GRID -->
+    <div class="files-grid" id="files"></div>
+  </main>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/files.js') }}"></script>
+{% endblock %}

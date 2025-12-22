@@ -1,0 +1,213 @@
+* {
+  box-sizing: border-box;
+  font-family: Inter, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f5f7fb;
+}
+
+/* Topbar */
+.topbar {
+  height: 60px;
+  background: white;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  gap: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.topbar input {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.logo {
+  font-weight: 700;
+}
+
+.user img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  height: calc(100vh - 60px);
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: white;
+  padding: 16px;
+  border-right: 1px solid #ddd;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.sidebar li.active,
+.sidebar li:hover {
+  background: #e7ecff;
+}
+
+.primary {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #4f6ef7;
+  color: white;
+  cursor: pointer;
+}
+
+.secondary {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 8px;
+  border: 1px dashed #aaa;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Content */
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.files-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.file-card {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.file-card:hover {
+  transform: translateY(-3px);
+}
+
+.file-icon {
+  font-size: 40px;
+}
+
+.file-name {
+  margin-top: 10px;
+  font-size: 14px;
+  word-break: break-word;
+}
+
+
+
+/* Add Account Page */
+
+.add-account-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #eef2ff, #f9fafb);
+}
+
+.add-account-card {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  width: 360px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+}
+
+.add-account-card h1 {
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px;
+  border-radius: 10px;
+  background: white;
+  border: 1px solid #ddd;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.google-btn img {
+  width: 20px;
+}
+
+.google-btn:hover {
+  background: #f5f5f5;
+}
+
+.note {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #777;
+}
+
+
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+  flex-wrap: wrap;
+}
+
+.tabs button {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background: #e7ecff;
+  font-size: 13px;
+}
+
+.tabs button.active {
+  background: #4f6ef7;
+  color: white;
+}
+
+.file-account {
+  font-size: 11px;
+  color: #777;
+}

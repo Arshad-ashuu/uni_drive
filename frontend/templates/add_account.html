@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}Add Account – Uni Drive{% endblock %}
+
+{% block body %}
+<div class="add-account-wrapper">
+
+  <div class="add-account-card">
+    <h1>☁ Uni Drive</h1>
+    <p class="subtitle">
+      Connect your cloud account to access all your files in one place
+    </p>
+
+    <a href="/auth/google" class="google-btn">
+      <img src="https://developers.google.com/identity/images/g-logo.png" />
+      Connect with Google
+    </a>
+
+    <p class="note">
+      We only read your files. No data is modified without permission.
+    </p>
+  </div>
+
+</div>
+{% endblock %}

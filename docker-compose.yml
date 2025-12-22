@@ -1,0 +1,42 @@
+version: "3.9"
+
+services:
+  backend:
+    build:
+      context: ./backend
+    container_name: uni-drive-backend
+    ports:
+      - "5000:5000"
+    env_file:
+      - .env
+    volumes:
+      # Mount frontend into container
+      - ./frontend:/frontend
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: unless-stopped
+
+  postgres:
+    image: postgres:16
+    container_name: uni-drive-db
+    environment:
+      POSTGRES_DB: unified_drive
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin123
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+    # 🔑 HEALTHCHECK (IMPORTANT)
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U admin -d unified_drive"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+    restart: unless-stopped
+
+volumes:
+  pgdata:
