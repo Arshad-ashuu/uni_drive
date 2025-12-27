@@ -15,9 +15,10 @@ This project is built as a **learning + DevOps-oriented system**, with a clear r
 * 🐘 PostgreSQL running in **Docker**
 * 🔄 Token storage & reuse (no repeated login)
 
+
 ---
 
-## 🧠 Motivation
+## Motivation
 
 Managing files across multiple Google accounts is painful because it requires frequent account switching.
 
