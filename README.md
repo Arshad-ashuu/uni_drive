@@ -6,6 +6,12 @@ This project is built as a **learning + DevOps-oriented system**, with a clear r
 
 ---
 
+<!-- <img width="1193" height="635" alt="image" src="https://github.com/user-attachments/assets/6d51ffe8-e574-4172-b060-f3f45a3865ec" /> -->
+<img width="1856" height="887" alt="image" src="https://github.com/user-attachments/assets/b0e0ed8b-969e-4614-8be8-cfd2eff1da0a" />
+
+
+---
+
 ## 🚀 Features (Phase 1 – Completed)
 
 * 🔐 Google OAuth 2.0 authentication
