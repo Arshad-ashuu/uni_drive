@@ -1,3 +1,5 @@
+![Portfolio](https://img.shields.io/badge/Portfolio-black)
+
 # 📂 Unified Drive – Multi-Account Google Drive Dashboard
 
 A personal backend project that allows you to **view files from multiple Google Drive accounts in one place** without switching accounts, using **Google OAuth 2.0**, **Flask**, and **PostgreSQL (Docker)**.
